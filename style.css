@@ -49,9 +49,22 @@ body {
     padding: 0;
     border: none;
 }
-#into .content h3 {
+#intro .content h3 {
     font-size: 1.5em;
     font-weight: 300;
+}
+#intro.content .socials {
+    padding: 15px;
+}
+#intro .content .socials a {
+    color: black;
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    bottom: 1px solid #ccf;
 }
 section {
     margin-bottom: 25px;
