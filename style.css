@@ -12,12 +12,21 @@ body {
 #intro {
     position: relative;
     max-height: 100%;
-    overflow: hidden;
+    overflow: hidden; 
+    z-index: 1;
+}
+#intro::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
 }
 #intro img {
     display: block;
-    position: absolute
-    left: 50%;
     min-width: 100%;
     min-height: 100%;
 }
@@ -28,5 +37,5 @@ section h2 {
     text-align: center;
     line-height: 1;
     padding-bottom: 10px;
-    border-bottom: 2px solid #99f;
+    border-bottom: 2px solid rgb(28, 170, 40);
 }
